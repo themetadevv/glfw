@@ -4,6 +4,7 @@ intermediates_dir = "bin/intermediates/" ..outputdir.. "/%{prj.name}"
 distributions_dir= "bin/distribution/"
 
 project "GLFW"
+	location "."
 	kind "StaticLib"
 	language "C"
 
