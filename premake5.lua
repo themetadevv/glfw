@@ -2,7 +2,6 @@ glfw_prj_output_dir = ("bin/glfw/builds")
 glfw_prj_intermediates_dir = ("bin/glfw/intermediates")
 
 project "glfw"
-	location "submodules"
 	kind "StaticLib"
 	language "C"
 	systemversion "latest"
