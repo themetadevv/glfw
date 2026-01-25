@@ -1,14 +1,11 @@
-glfw_prj_output_dir = ("bin/glfw/builds")
-glfw_prj_intermediates_dir = ("bin/glfw/intermediates")
-
-project "glfw"
+project "GLFW"
 	kind "StaticLib"
 	language "C"
 	systemversion "latest"
 	staticruntime "off" 
 
-    targetdir (glfw_prj_output_dir .. "/%{cfg.system}_%{cfg.buildcfg}")
-    objdir (glfw_prj_intermediates_dir .. "/%{cfg.system}")
+    targetdir ("bin/glfw/builds/%{cfg.system}_%{cfg.buildcfg}")
+    objdir ("bin/glfw/intermediates/%{cfg.system}")
 
 	files
 	{
